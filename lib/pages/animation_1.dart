@@ -7,7 +7,7 @@ class FirstAnimation extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Animation 1'),
+        title: const Text('Animation 1: AnimatedCrossFade'),
       ),
       body: const Center(
         child: Text('Content for Animation 1'),

@@ -7,7 +7,7 @@ class FifthAnimation extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Animation 5'),
+        title: const Text('Animation 5: AnimatedSlide'),
       ),
       body: const Center(
         child: Text('Content for Animation 5'),

@@ -7,7 +7,7 @@ class ThirdAnimation extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Animation 3'),
+        title: const Text('Animation 3: AnimatedRotation'),
       ),
       body: const Center(
         child: Text('Content for Animation 3'),

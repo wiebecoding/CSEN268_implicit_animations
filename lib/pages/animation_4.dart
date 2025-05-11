@@ -7,7 +7,7 @@ class ForthAnimation extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Animation 4'),
+        title: const Text('Animation 4: AnimatedSize'),
       ),
       body: const Center(
         child: Text('Content for Animation 4'),

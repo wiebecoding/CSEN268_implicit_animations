@@ -7,7 +7,7 @@ class SecondAnimation extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Animation 2'),
+        title: const Text('Animation 2: AnimatedAlign'),
       ),
       body: const Center(
         child: Text('Content for Animation 2'),
