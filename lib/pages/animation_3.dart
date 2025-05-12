@@ -16,22 +16,28 @@ class LogoRotateState extends State<ThirdAnimation> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: <Widget>[
-        ElevatedButton(
-          onPressed: _changeRotation,
-          child: const Text('Rotate Logo'),
+    return Scaffold(
+      appBar: AppBar(title: const Text('AnimatedSize Sample')),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            ElevatedButton(
+              onPressed: _changeRotation,
+              child: const Text('Rotate Logo'),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(50),
+              child: AnimatedRotation(
+                turns: turns,
+                duration: const Duration(seconds: 1),
+                child: const FlutterLogo(
+                ),
+              ),
+            ),
+          ],
         ),
-        Padding(
-          padding: const EdgeInsets.all(50),
-          child: AnimatedRotation(
-            turns: turns,
-            duration: const Duration(seconds: 1),
-            child: const FlutterLogo(),
-          ),
-        ),
-      ],
+      ),
     );
   }
 }
