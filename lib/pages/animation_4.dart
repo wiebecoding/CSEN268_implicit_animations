@@ -52,7 +52,7 @@ class _ForthAnimationState extends State<ForthAnimation> {
             SizedBox(
               height: 50,
               child: RotatedBox(
-                quarterTurns: 2,
+                quarterTurns: 0,
                 child: Slider(
                   min: 10,
                   max: 2000,

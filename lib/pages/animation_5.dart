@@ -43,8 +43,8 @@ class _FifthAnimationState extends State<FifthAnimation> {
                         child: RotatedBox(
                           quarterTurns: 1,
                           child: Slider(
-                            min: -5.0,
-                            max: 5.0,
+                            min: -1.0,
+                            max: 1.0,
                             value: offset.dy,
                             onChanged: (double value) {
                               setState(() {
@@ -65,8 +65,8 @@ class _FifthAnimationState extends State<FifthAnimation> {
                 Text('X', style: textTheme.bodyMedium),
                 Expanded(
                   child: Slider(
-                    min: -5.0,
-                    max: 5.0,
+                    min: -1.0,
+                    max: 1.0,
                     value: offset.dx,
                     onChanged: (double value) {
                       setState(() {
