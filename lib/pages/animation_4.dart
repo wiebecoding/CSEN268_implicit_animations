@@ -36,7 +36,7 @@ class _ForthAnimationState extends State<ForthAnimation> {
               curve: widget.curve,
               child: SizedBox.square(
                 dimension: _isSelected ? 250.0 : 100.0,
-                child: const Center(child: FlutterLogo(size: 75.0)),
+                child: const Center(child: FlutterLogo(size: 100.0)),
               ),
             ),
           ),

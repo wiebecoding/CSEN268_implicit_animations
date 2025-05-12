@@ -32,7 +32,7 @@ class _FifthAnimationState extends State<FifthAnimation> {
                         offset: offset,
                         duration: const Duration(milliseconds: 500),
                         curve: Curves.easeInOut,
-                        child: const FlutterLogo(size: 50.0),
+                        child: const FlutterLogo(size: 100.0),
                       ),
                     ),
                   ),

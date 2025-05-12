@@ -31,8 +31,7 @@ class LogoRotateState extends State<ThirdAnimation> {
               child: AnimatedRotation(
                 turns: turns,
                 duration: const Duration(seconds: 1),
-                child: const FlutterLogo(
-                ),
+                child: const FlutterLogo(size: 100),
               ),
             ),
           ],
