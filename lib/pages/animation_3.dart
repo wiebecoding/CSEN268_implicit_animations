@@ -9,10 +9,11 @@ class ThirdAnimation extends StatefulWidget {
 
 class LogoRotateState extends State<ThirdAnimation> {
   double turns = 0.0;
+  double div = 8.0;
   Duration dur = Duration(milliseconds: 500);
 
   void _changeRotation() {
-    setState(() => turns += 1.0 / 8.0);
+    setState(() => turns += 1.0 / div);
   }
 
   @override
@@ -37,7 +38,7 @@ class LogoRotateState extends State<ThirdAnimation> {
             ),
             Text('Duration'),
             SizedBox(
-              height: 100, // Provide a fixed height for the slider container
+              height: 50,
               child: RotatedBox(
                 quarterTurns: 2,
                 child: Slider(
@@ -47,6 +48,23 @@ class LogoRotateState extends State<ThirdAnimation> {
                   onChanged: (double value) {
                     setState(() {
                       dur = Duration(milliseconds: value.toInt());
+                    });
+                  },
+                ),
+              ),
+            ),
+            Text('Turns Divisor'),
+            SizedBox(
+              height: 50,
+              child: RotatedBox(
+                quarterTurns: 0,
+                child: Slider(
+                  min: 1,
+                  max: 10,
+                  value: div,
+                  onChanged: (double value) {
+                    setState(() {
+                      div = value;
                     });
                   },
                 ),
