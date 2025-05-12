@@ -88,7 +88,7 @@ GoRouter routing() {
             path: 'animation4',
             name: RouteName.animation4,
             builder: (BuildContext context, GoRouterState state) {
-              return const ForthAnimation();
+              return const ForthAnimation(duration: Duration(seconds: 1), curve: Curves.easeIn);
             },
           ),
           GoRoute(
