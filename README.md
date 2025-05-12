@@ -1,16 +1,11 @@
 # csen268_implicit_animations
 
-A new Flutter project.
+This application demonstrates five commonly used widgets from Flutter's ImplicitlyAnimatedWidgets library. The following widgets are:
 
-## Getting Started
+AnimatedCrossFade
+AnimatedAlign
+Animated Rotation
+AnimatedSize
+AnimatedSlide
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+The main page has five buttons for the corresponding widgets. Each button will take you to a separate page depicting the desired animation. Each page has a slider or input field where you can change aspects of the animation such as the curve or duration of the animation.
