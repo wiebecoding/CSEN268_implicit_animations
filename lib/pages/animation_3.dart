@@ -9,6 +9,7 @@ class ThirdAnimation extends StatefulWidget {
 
 class LogoRotateState extends State<ThirdAnimation> {
   double turns = 0.0;
+  Duration dur = Duration(milliseconds: 500);
 
   void _changeRotation() {
     setState(() => turns += 1.0 / 8.0);
@@ -17,7 +18,7 @@ class LogoRotateState extends State<ThirdAnimation> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('AnimatedSize Sample')),
+      appBar: AppBar(title: const Text('AnimatedRotation Sample')),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -30,8 +31,25 @@ class LogoRotateState extends State<ThirdAnimation> {
               padding: const EdgeInsets.all(50),
               child: AnimatedRotation(
                 turns: turns,
-                duration: const Duration(seconds: 1),
+                duration: dur,
                 child: const FlutterLogo(size: 100),
+              ),
+            ),
+            Text('Duration'),
+            SizedBox(
+              height: 100, // Provide a fixed height for the slider container
+              child: RotatedBox(
+                quarterTurns: 2,
+                child: Slider(
+                  min: 10,
+                  max: 2000,
+                  value: dur.inMilliseconds.toDouble(),
+                  onChanged: (double value) {
+                    setState(() {
+                      dur = Duration(milliseconds: value.toInt());
+                    });
+                  },
+                ),
               ),
             ),
           ],
